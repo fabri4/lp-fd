@@ -3,8 +3,6 @@
 var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     connect = require('gulp-connect'),
-    htmlmin = require('gulp-htmlmin'),
-    imagemin = require('gulp-imagemin'),
     livereload = require('gulp-livereload'),
     minifyCSS = require('gulp-minify-css'),
     rename = require('gulp-rename'),
