@@ -1,0 +1,79 @@
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+
+
+.b-button,
+%b-button {
+  position: relative;
+  display: inline-block;
+  //width: 100%;
+  padding: 16px 14px 16px 17px;
+  font: 1em "Lato-Bold";
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 3px;
+  outline: none;
+  transition: all 0.3s ease-out;
+}
+
+.b-btn--green {
+  border: 2px solid $green;
+  background-color: $green;
+  &:hover {
+    border: 2px solid #333333;
+    background-color: #fff;
+    color: #333333;
+  }
+}
+
+.b-btn--black {
+  color: #333333;
+  border: 2px solid #333333;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.b-btn--white {
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.b-btn--transparent {
+  background-color: transparent;
+  &:hover {
+    border: 2px solid $green;
+    background-color: $green;
+  }
+}
+
+.b-btn--main {
+  @extend %b-button;
+  @extend .b-btn--green;
+}
+
+.b-btn--story {
+  @extend %b-button;
+  @extend .b-btn--transparent;
+  @extend .b-btn--black;
+}
+
+.b-btn--experience {
+  @extend %b-button;
+  @extend .b-btn--transparent;
+  @extend .b-btn--white;
+}
+
+.b-btn--start {
+  @extend %b-button;
+  @extend .b-btn--transparent;
+  @extend .b-btn--white;
+  &:hover {
+    background: #333333;
+    border: 2px solid #333333;
+  }
+}

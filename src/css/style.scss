@@ -2,12 +2,36 @@
 	$MAIN
 \*------------------------------------*/
 
+@import "includes/variables";
 @import "includes/reset";
 @import "includes/fonts";
 @import "includes/sprite";
+@import "includes/mixins";
+@import "includes/buttons";
+@import "includes/susy";
+//@import "includes/animation";
 @import "includes/common";
 
+$susy: (
+  columns: 12,
+  gutters: .25,
+  global-box-sizing: border-box,
+  debug: (image: show),
+  container: 1170px
+);
 
 
 /*----------- #HEADER ---------*/
 
+
+.header {
+  @include container;
+}
+
+
+/*----------- #MAIN ---------*/
+
+
+.main {
+  @include container;
+}

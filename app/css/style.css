@@ -1,5 +1,7 @@
 /*------------------------------------*	$MAIN
 \*------------------------------------*/
+/*------------------------------------*    $VARIABLES
+\*------------------------------------*/
 /*------------------------------------*    $RESET
 \*------------------------------------*/
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -65,6 +67,57 @@ html {
 \*------------------------------------*/
 /*------------------------------------*    $SPRITE
 \*------------------------------------*/
+/*------------------------------------*    $MIXINS
+\*------------------------------------*/
+/*------------------------------------*    $BUTTONS
+\*------------------------------------*/
+.b-button,
+.b-btn--main,
+.b-btn--story,
+.b-btn--experience,
+.b-btn--start {
+  position: relative;
+  display: inline-block;
+  padding: 16px 14px 16px 17px;
+  font: 1em "Lato-Bold";
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 3px;
+  outline: none;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+.b-btn--green, .b-btn--main {
+  border: 2px solid #4ecb8c;
+  background-color: #4ecb8c; }
+  .b-btn--green:hover, .b-btn--main:hover {
+    border: 2px solid #333333;
+    background-color: #fff;
+    color: #333333; }
+
+.b-btn--black, .b-btn--story {
+  color: #333333;
+  border: 2px solid #333333; }
+  .b-btn--black:hover, .b-btn--story:hover {
+    color: #fff; }
+
+.b-btn--white, .b-btn--experience, .b-btn--start {
+  color: #ffffff;
+  border: 2px solid #ffffff; }
+
+.b-btn--transparent, .b-btn--story, .b-btn--experience, .b-btn--start {
+  background-color: transparent; }
+  .b-btn--transparent:hover, .b-btn--story:hover, .b-btn--experience:hover, .b-btn--start:hover {
+    border: 2px solid #4ecb8c;
+    background-color: #4ecb8c; }
+
+.b-btn--start:hover {
+  background: #333333;
+  border: 2px solid #333333; }
+
 /*------------------------------------*    $COMMON STYLES
 \*------------------------------------*/
 .clearfix {
@@ -80,69 +133,52 @@ html {
   overflow: hidden;
   white-space: nowrap; }
 
-.b-page__wrapper {
+.page__wrapper {
   width: 100%;
   overflow: hidden; }
 
-.b-content {
+.content {
   width: 100%;
-  max-width: 1000px;
   margin: 0 auto;
   padding: 0 15px; }
-  @media screen and (min-width: 1200px) {
-    .b-content {
-      padding: 0; } }
-
-.b-button {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  text-decoration: none;
-  text-align: center;
-  outline: none; }
 
 .t-uc {
   text-transform: uppercase; }
 
+.t-b {
+  font-weight: bold; }
+
 .t-sup {
   vertical-align: super; }
 
-.wp1, .wp2, .wp3, .wp4, .wp5 {
-  visibility: hidden; }
-
-.bounceInLeft, .bounceInRight, .fadeIn, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .zoomIn {
-  visibility: visible; }
-
-.delay-02s {
-  animation-delay: 0.2s;
-  -webkit-animation-delay: 0.2s; }
-
-.delay-04s {
-  animation-delay: 0.4s;
-  -webkit-animation-delay: 0.4s; }
-
-.delay-05s {
-  animation-delay: 0.5s;
-  -webkit-animation-delay: 0.5s; }
-
-.delay-06s {
-  animation-delay: 0.6s;
-  -webkit-animation-delay: 0.6s; }
-
-.delay-08s {
-  animation-delay: 0.8s;
-  -webkit-animation-delay: 0.8s; }
-
-.delay-1s {
-  animation-delay: 1s;
-  -webkit-animation-delay: 1s; }
-
-.delay-12s {
-  animation-delay: 1.2s;
-  -webkit-animation-delay: 1.2s; }
-
-.delay-2s {
-  animation-delay: 2s;
-  -webkit-animation-delay: 2s; }
-
 /*----------- #HEADER ---------*/
+.header {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
+  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
+  background-size: 8.47458%;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top; }
+  .header:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+/*----------- #MAIN ---------*/
+.main {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
+  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
+  background-size: 8.47458%;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top; }
+  .main:after {
+    content: " ";
+    display: block;
+    clear: both; }

@@ -1,0 +1,38 @@
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+
+@mixin inline-block() {
+  display: inline-block;
+  vertical-align: top;
+  letter-spacing: normal;
+}
+
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin block-shadow {
+  position: relative;
+  box-shadow: 0 3px 10px rgba(17, 18, 22, 0.26);
+}
+
+@mixin minw($px) {
+  @media screen and (min-width: $px+px) {
+    @content;
+  }
+}
+
+@mixin maxw($px) {
+  @media screen and (max-width: $px+px) {
+    @content;
+  }
+}
+
+@mixin minmax($pxmin, $pxmax) {
+  @media screen and (min-width: $pxmin+px) and (max-width: $pxmax+px) {
+    @content;
+  }
+}
