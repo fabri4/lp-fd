@@ -2,7 +2,7 @@
     $MIXINS
 \*------------------------------------*/
 
-@mixin inline-block() {
+@mixin inline-block {
   display: inline-block;
   vertical-align: top;
   letter-spacing: normal;
@@ -34,5 +34,15 @@
 @mixin minmax($pxmin, $pxmax) {
   @media screen and (min-width: $pxmin+px) and (max-width: $pxmax+px) {
     @content;
+  }
+}
+
+@mixin container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 15px;
+  @include minw(1200) {
+    padding: 0;
   }
 }

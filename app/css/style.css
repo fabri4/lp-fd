@@ -137,11 +137,6 @@ html {
   width: 100%;
   overflow: hidden; }
 
-.content {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 15px; }
-
 .t-uc {
   text-transform: uppercase; }
 
@@ -153,32 +148,20 @@ html {
 
 /*----------- #HEADER ---------*/
 .header {
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
-  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
-  background-size: 8.47458%;
-  background-origin: content-box;
-  background-clip: content-box;
-  background-position: left top; }
-  .header:after {
-    content: " ";
-    display: block;
-    clear: both; }
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 15px; }
+  @media screen and (min-width: 1200px) {
+    .header {
+      padding: 0; } }
 
 /*----------- #MAIN ---------*/
 .main {
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
-  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
-  background-size: 8.47458%;
-  background-origin: content-box;
-  background-clip: content-box;
-  background-position: left top; }
-  .main:after {
-    content: " ";
-    display: block;
-    clear: both; }
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 15px; }
+  @media screen and (min-width: 1200px) {
+    .main {
+      padding: 0; } }
